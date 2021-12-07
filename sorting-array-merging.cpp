@@ -17,14 +17,14 @@ int main(void)
 		cin>>m[i];
 		
 	}
-	cout<<"До сортировки: ";
+	cout<<"Before sorting: ";
 	for (i=0;i<MAXARRAY;i++)
 	  {
 	    cout<<m[i]<<" ";
 	   m[i]=m[i]*m[i];}
 	   cout<<endl;
 	mergesort(m,0,(MAXARRAY-1));
-	cout<<"После: ";
+	cout<<"After sorting: ";
 	for (i=0;i<MAXARRAY;i++)
 	{
 		cout<<m[i]<<" ";
