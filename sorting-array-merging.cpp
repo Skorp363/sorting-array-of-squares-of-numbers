@@ -20,7 +20,7 @@ int main(void)
 	cout<<"Before sorting: ";
 	for (i=0;i<MAXARRAY;i++)
 	  {
-	    cout<<m[i]<<" ";
+		cout<<m[i]<<" ";
 	   m[i]=m[i]*m[i];}
 	   cout<<endl;
 	mergesort(m,0,(MAXARRAY-1));
@@ -60,7 +60,7 @@ void mergesort(int a[],int low,int high)
 		if (merge2<=high-low)
 		 if(merge1<=pivot-low)
 		  if (working[merge1]>working[merge2])
-		    a[i+low]=working[merge2++];
+			a[i+low]=working[merge2++];
 		  else
 		  a[i+low]=working[merge1++];
 		 else
